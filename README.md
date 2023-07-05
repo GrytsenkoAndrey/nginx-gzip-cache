@@ -176,8 +176,9 @@ Content-Encoding: gzip
 # Expires Header (cache)
 
 ## Intro
-[location directive](http://nginx.org/en/docs/http/ngx_http_core_module.html#location)
-[expires directive](http://nginx.org/en/docs/http/ngx_http_headers_module.html#expires)
+
+- [location directive](http://nginx.org/en/docs/http/ngx_http_core_module.html#location)
+- [expires directive](http://nginx.org/en/docs/http/ngx_http_headers_module.html#expires)
 
 
 ## 1 variant 
