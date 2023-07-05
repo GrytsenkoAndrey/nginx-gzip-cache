@@ -172,3 +172,41 @@ ETag: W/"6022dc91-400"
 Content-Encoding: gzip
 ```
 
+
+# Expires Header (cache)
+
+## Intro
+[location directive](http://nginx.org/en/docs/http/ngx_http_core_module.html#location)
+[expires directive](http://nginx.org/en/docs/http/ngx_http_headers_module.html#expires)
+
+
+## 1 variant 
+
+```
+location ~* \.(?:ico|css|js|gif|jpe?g|png)$ {
+    expires 30d;
+    add_header Pragma public;
+    add_header Cache-Control "public";
+}
+```
+
+## 2 variant
+
+Create **img-cache.conf** file
+
+```
+location ~* \.(?:ico|css|js|gif|jpe?g|png)$ {
+    expires 30d;
+    add_header Pragma public;
+    add_header Cache-Control "public";
+}
+```
+
+and then include it into the nginx.config
+
+```
+ #Image Caching
+ include /etc/nginx/conf/img-cache.conf;
+```
+
+
