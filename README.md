@@ -178,6 +178,7 @@ Content-Encoding: gzip
 ## Intro
 
 - [location directive](http://nginx.org/en/docs/http/ngx_http_core_module.html#location)
+  
 - [expires directive](http://nginx.org/en/docs/http/ngx_http_headers_module.html#expires)
 
 
